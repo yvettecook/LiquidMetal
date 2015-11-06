@@ -65,6 +65,7 @@
 		1A3CA9701BED4668005D6DEE /* b2ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA8EC1BED4668005D6DEE /* b2ParticleSystem.cpp */; };
 		1A3CA9711BED4668005D6DEE /* b2VoronoiDiagram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA8EF1BED4668005D6DEE /* b2VoronoiDiagram.cpp */; };
 		1A3CA9721BED4668005D6DEE /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA8F21BED4668005D6DEE /* b2Rope.cpp */; };
+		1A3CA9761BED4A26005D6DEE /* LiquidFun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,9 @@
 		1A3CA8F01BED4668005D6DEE /* b2VoronoiDiagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2VoronoiDiagram.h; sourceTree = "<group>"; };
 		1A3CA8F21BED4668005D6DEE /* b2Rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2Rope.cpp; sourceTree = "<group>"; };
 		1A3CA8F31BED4668005D6DEE /* b2Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2Rope.h; sourceTree = "<group>"; };
+		1A3CA9741BED4A25005D6DEE /* LiquidFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiquidFun.h; sourceTree = "<group>"; };
+		1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LiquidFun.mm; sourceTree = "<group>"; };
+		1A3CA9771BED4A80005D6DEE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,9 @@
 				1A3CA8201BED4652005D6DEE /* Assets.xcassets */,
 				1A3CA8221BED4652005D6DEE /* LaunchScreen.storyboard */,
 				1A3CA8251BED4652005D6DEE /* Info.plist */,
+				1A3CA9741BED4A25005D6DEE /* LiquidFun.h */,
+				1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */,
+				1A3CA9771BED4A80005D6DEE /* Bridging-Header.h */,
 			);
 			path = LiquidMetal;
 			sourceTree = "<group>";
@@ -489,6 +496,7 @@
 				1A3CA9081BED4668005D6DEE /* b2Math.cpp in Sources */,
 				1A3CA9611BED4668005D6DEE /* b2FrictionJoint.cpp in Sources */,
 				1A3CA9631BED4668005D6DEE /* b2Joint.cpp in Sources */,
+				1A3CA9761BED4A26005D6DEE /* LiquidFun.mm in Sources */,
 				1A3CA96B1BED4668005D6DEE /* b2WheelJoint.cpp in Sources */,
 				1A3CA9621BED4668005D6DEE /* b2GearJoint.cpp in Sources */,
 				1A3CA81C1BED4652005D6DEE /* ViewController.swift in Sources */,
@@ -658,6 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvettecook.LiquidMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
@@ -675,6 +684,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yvettecook.LiquidMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
