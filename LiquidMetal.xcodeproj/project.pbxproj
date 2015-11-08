@@ -66,6 +66,7 @@
 		1A3CA9711BED4668005D6DEE /* b2VoronoiDiagram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA8EF1BED4668005D6DEE /* b2VoronoiDiagram.cpp */; };
 		1A3CA9721BED4668005D6DEE /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA8F21BED4668005D6DEE /* b2Rope.cpp */; };
 		1A3CA9761BED4A26005D6DEE /* LiquidFun.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */; };
+		1AF6400D1BEE80EE00E993E7 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6400C1BEE80EE00E993E7 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +191,7 @@
 		1A3CA9741BED4A25005D6DEE /* LiquidFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiquidFun.h; sourceTree = "<group>"; };
 		1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LiquidFun.mm; sourceTree = "<group>"; };
 		1A3CA9771BED4A80005D6DEE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1AF6400C1BEE80EE00E993E7 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 				1A3CA9741BED4A25005D6DEE /* LiquidFun.h */,
 				1A3CA9751BED4A26005D6DEE /* LiquidFun.mm */,
 				1A3CA9771BED4A80005D6DEE /* Bridging-Header.h */,
+				1AF6400C1BEE80EE00E993E7 /* Shaders.metal */,
 			);
 			path = LiquidMetal;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF6400D1BEE80EE00E993E7 /* Shaders.metal in Sources */,
 				1A3CA8F91BED4668005D6DEE /* b2BroadPhase.cpp in Sources */,
 				1A3CA9701BED4668005D6DEE /* b2ParticleSystem.cpp in Sources */,
 				1A3CA9671BED4668005D6DEE /* b2PulleyJoint.cpp in Sources */,
@@ -708,6 +712,7 @@
 				1A3CA82A1BED4652005D6DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
