@@ -50,4 +50,44 @@ static b2World *world;
     return ((b2ParticleSystem *)particleSystem)->GetPositionBuffer();
 }
 
++ (void)worldStep:(CFTimeInterval)timeStep velocityIterations:(int)velocityIterations positionIterations:(int)positionIterations {
+    world->Step(timeStep, velocityIterations, positionIterations);
+}
+
++ (void *)createEdgeBoxWithOrigin:(Vector2D)origin size:(Size2D)size {
+    b2BodyDef bodyDef;
+    bodyDef.position.Set(origin.x, origin.y);
+    b2Body *body = world->CreateBody(&bodyDef);
+    
+    b2EdgeShape shape;
+    
+    shape.Set(b2Vec2(0,0), b2Vec2(size.width, 0));
+    body->CreateFixture(&shape, 0);
+    
+    shape.Set(b2Vec2(0, size.height), b2Vec2(size.width, size.height));
+    body->CreateFixture(&shape, 0);
+    
+    shape.Set(b2Vec2(0, size.height), b2Vec2(0, 0));
+    body->CreateFixture(&shape, 0);
+    
+    shape.Set(b2Vec2(size.width, size.height), b2Vec2(size.width, 0));
+    body->CreateFixture(&shape, 0);
+    
+    return body;
+}
+
++ (void)setGravity:(Vector2D)gravity {
+    world->SetGravity(b2Vec2(gravity.x, gravity.y));
+}
+
++ (void)setParticleLimitForSystem:(void *)particleSystem maxParticles:(int)maxParticles {
+    ((b2ParticleSystem *)particleSystem)->SetDestructionByAge(true);
+    ((b2ParticleSystem *)particleSystem)->SetMaxParticleCount(maxParticles);
+}
+
++ (void)destroyWorld {
+    delete world;
+    world = NULL;
+}
+
 @end
